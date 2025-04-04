@@ -112,10 +112,42 @@
     echo "</ul>";
     echo "<p>Para checar se a variável é um tipo inteiro</p>";
     $num1 = 10;
-    var_dump(is_int($num1));
-
-
+    echo "\$num1=10". var_dump(is_int($num1)). "<br>";
+    $num2 = 4.55;
+    echo "\$num2=4.55". var_dump(is_int($num1)). "<br>";
     
+    echo "<h4>Float</h4>";
+    echo "<p>Para checar se a variável é um tipo float:</p>";
+    $num3 = 7.15;
+    echo "\$num3=7.15". var_dump(is_float($num3)). "<br>";
+    
+    echo "<h4>Infinito</h4>";
+    echo "Há 2 funções: <code>is_finite()</code> e <code>is_infinity()</code>.<br>";
+    $num4 = 9.5e500;
+    var_dump($num4);
+    
+    echo "<h4>NaN (Not a Number)</h4>";
+    $num5 = acos(1.5);
+    var_dump($num5);
+    $num6 = sqrt(-10);
+    var_dump($num6);
+    
+    echo "<h4>Number string</h4>";
+    $num7 = 100;
+    echo var_dump(is_numeric($num7)) . "<br>";
+    $num8 = "100";
+    echo var_dump(is_numeric($num7)) . "<br>";
+    echo $num8 + 10 . " Somou o conteúdo de \$num8  + 10 e retornou um inteiro" . "<br>";
+    
+    echo "<h4>Conversão de tipos</h4>";
+    echo "<h5>De float para inteiro</h5>";
+    $num9 = 456.98;
+    $convertido1 = (int)$num9;
+    echo $convertido1 ."<br>";
+    $num10 = "123";
+    $convertido2 = (int)$num10;
+    echo $convertido2 . "<br>"
+
     ?>
 </body>
 </html>

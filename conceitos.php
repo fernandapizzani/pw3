@@ -88,6 +88,34 @@
     echo "<h4>Fatiando de acordo com um critério</h4>";
     print_r(explode(" ",$text7));
     
+    echo "<h4>Caracteres de string</h4>";
+    echo "<p>Usa-se o ponto final para concatenar strings.</p>";
+    $text8 = "Aula PHP para";
+    $text9 = "manipular strings";
+    echo $text8 . $text9;
+    
+    echo "<h4>Caracteres de escape</h4>";
+    echo "<p>Usa-se contra-barra para não interpretar comandos.</p>";
+    echo "<p>Pana não confundir a aspa do comando com uma aspa do texto, adicione uma contra-barra antes de barrar para impriir a aspa. Exemplo: O entrevistado disse \"Nois vai\".</p>";
+    echo "<p>Caso precise imprimir a variável, use contra-barra antes do texto, Exemplo: \$text8.</p>";
+    
+    echo "<h4>Numbers</h4>";
+    echo "<p>Os 4 tipos numéricos são:</p>";
+    echo "<ul>";
+    echo "  <li>Integer</li>";
+    echo "  <li>Float</li>";
+    echo "  <li>Number Strings</li>";
+    echo "</ul>";
+    echo "<ul>";
+    echo "  <li>Infinity</li>";
+    echo "  <li>Nan</li>";
+    echo "</ul>";
+    echo "<p>Para checar se a variável é um tipo inteiro</p>";
+    $num1 = 10;
+    var_dump(is_int($num1));
+
+
+    
     ?>
 </body>
 </html>

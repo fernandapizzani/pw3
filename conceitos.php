@@ -147,6 +147,7 @@
     $num10 = "123";
     $convertido2 = (int)$num10;
     echo $convertido2 . "<br>"
+    
 
     ?>
 </body>
